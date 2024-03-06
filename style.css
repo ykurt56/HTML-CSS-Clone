@@ -1,0 +1,732 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    box-sizing: border-box;
+    
+}
+
+.navbar {
+    height: 60px;
+    position: fixed;
+    width: 100%; 
+    top: 0; /* Navbar'ı ekranın üst kısmına sabitle */
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+
+.container {
+    position: relative;
+    height: 40px;
+    top: 10px;
+    margin: 0 auto;
+    padding: 0 150px;
+    display: flex;
+    justify-content: space-between; /* İçerikleri container içinde sağa ve sola doğru yayacak şekilde hizalar */
+    align-items: center;
+}
+
+.navbarlogo {
+    display: inline-block;
+    padding: 7.5px 17px;
+}
+
+.navlist {
+    float: right;
+    padding-right: 100px;
+}
+
+ ul {
+    margin: 0; /* Liste için varsayılan margin'ı sıfırlar */
+    padding: 0; /* Liste için varsayılan padding'i sıfırlar */
+
+}
+
+.navbar  li {
+    list-style-type: none;
+    margin: 0 8px;
+    margin-left: 15px;
+    display: inline-block;
+}
+
+ ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+ ul li a:hover {
+    color: #f89d36 ;
+
+}
+
+.bghome{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.bghomeimg{
+    height: 100vh;
+    background-image: url(https://shreethemes.in/bootgen/layouts/images/mover/01.jpg);
+    background-attachment: fixed; /* Arka plan resmi sayfa kaydırıldığında sabit kalsın */
+    background-position: center; /* Arka plan resmini dikey ve yatayda ortala */
+    background-repeat: no-repeat; /* Arka plan resmini tekrar etme */
+    background-size: cover;
+}
+.hometext{
+    position: relative;
+    top: 40%;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    color: white;
+    bottom: 50%;
+}
+
+
+
+.hometext h1 {
+    position: relative;
+    font-size: 45px;
+    letter-spacing: 1px;
+    padding-bottom: 25px;
+}
+
+.hometext p {
+    font-size: 18px;
+    max-width: 600px;
+    text-align: center ;
+    margin: auto;
+    color: rgba(255,255,255,.5);
+    margin-bottom: 25px;
+
+}
+
+.button {
+    padding: 8px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid #f89d36;
+    background-color: transparent;
+    color:#f89d36 ;
+   
+}
+
+.button:hover{
+    background-color: #f89d36;
+    color: white;
+    box-shadow: 0 3px 7px rgba(248, 157, 54, 0.5)  ;
+
+
+}
+
+.button.bg{
+    background-color: #f89d36;
+    color: white;
+    box-shadow: 0 3px 7px rgba(248, 157, 54, 0.5)   ;
+
+}
+.section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    position: relative;
+
+}
+
+.bgwhite{
+  
+    display: block;
+    background-color: #ffffff;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.bgwhite h4 {
+    font-size: 26px ;
+    padding-bottom: 15px;
+}
+
+.bgwhite span{
+    color: #f89d36   ;
+}
+
+.whitetextimg{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.textmuted{
+    color:#8492a6;
+    max-width: 450px;
+    padding-top: 15px;
+    padding-bottom: 25px;;
+    font-size: 15px;
+    
+
+}
+.whiteimg img {
+    border-radius: 5px;
+    box-shadow:0 0 3px rgba(47,60,78,0.15)   ;
+    height: 550px;
+    margin: 0px 100px;
+
+}
+.text-list{
+    padding-bottom: 10px;
+    list-style:none;
+ 
+ }
+ 
+.text-list li{
+   padding-bottom: 10px;
+
+}
+.text-list li::before {
+
+    content: "✔️";
+}
+button:hover{
+    color: white;
+}
+.button.bg.s{
+    position: relative;
+    top: 15px;
+    color: black;
+}
+.button.bg.s:hover{ 
+    transition: color 0.3s ease;
+   color: white;
+
+}
+
+.bggray{
+    height: 1250px;
+   background-color:  #fafafb   ;
+}
+
+.graytext{
+    text-align: center;
+}
+.graytext h4{
+    font-size: 26px;
+    padding: 15px;
+    font-weight: 600;
+}
+.graytext p{
+    max-width: 600px;
+    margin: auto;
+    color: #8492a6 ;
+    margin-bottom: 50px;
+}
+.row{
+    margin: auto;
+    padding: auto;
+    max-width: 1110px;
+}
+
+.card{
+    position: relative;
+    width: 350px;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden; 
+    margin: auto;
+    padding: auto;
+    text-align: left;
+    float: left;
+    margin:10px;
+    border: solid 1px rgba(0, 0, 0, 0.133);
+
+}
+
+.cardtext{
+    position: relative;
+    margin:auto;
+    padding: 15px;
+}
+.card a{
+    text-decoration: none;
+    font-size: 13px;
+    color: black;
+
+
+}
+.card h5 {
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 5px;
+    
+
+}
+
+.card p {
+    max-width: 250px;
+
+}
+.card img{
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.card:hover{    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Gölgelendirme efekti: yatay, dikey, bulanıklık, rengin alfa değeri */
+    transition: box-shadow 0.3s ease; 
+}
+
+.card a:hover{
+    color: #f89d36;
+
+}
+.section.interval{
+    background-color: rgba(47,60,78,0.65);
+    background-image: url(https://shreethemes.in/bootgen/layouts/images/mover/04.jpg);
+    background-attachment: fixed; /* Arka plan resmi sayfa kaydırıldığında sabit kalsın */
+    background-repeat: no-repeat; /* Arka plan resmini tekrar etme */
+    background-size: cover;
+    min-height: 400px;
+   
+
+}
+.bg-overlay{
+    background-color: rgba(47,60,78,0.65);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    
+}
+.intervaltext{
+    position: relative;
+    top: 30%;
+    margin: auto;
+    text-align: center;
+}
+.intervaltext h4{
+    font-size: 26px;
+    color: white;
+  
+
+}
+
+.intervaltext p{
+    position: relative;
+    font-size: 18px;
+     max-width: 600px;
+     color: rgba(255,255,255,.5);
+     margin: 25px;
+     left: 30%;
+
+    
+}
+
+.intervaltext a{
+        text-decoration: none;
+        color: white;
+}
+.play-button {
+    width: 60px; /* Buttonun genişliği */
+    height: 60px; /* Buttonun yüksekliği */
+    border-radius: 50%; /* Buttonu yuvarlak yapar */
+    background-color: #f89d36; /* Buttonun arka plan rengi */
+    border: none; /* Buttonun kenarlığını kaldırır */
+    cursor: pointer; /* Üzerine gelindiğinde imleci bir el simgesi yapar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Gölgelendirme efekti */
+}
+
+.play-button:hover {
+    background-color: #e78f22; /* Buttonun üzerine gelindiğinde arka plan rengini değiştirir */
+}
+
+.card.gray{
+    width: auto;
+}
+
+.card.gray p {
+    border-bottom:  solid #e9ecef !important
+}
+
+.people{
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        text-align: center;
+        float: left;
+        margin: 10px 10px 10px 10px;
+        
+}
+
+
+.peopletext{
+    padding-top: 10%;
+}
+.peopletext h6{
+   font-size: 14px;
+        }
+section.bggray.peoples{
+    height: auto;
+
+}
+
+.rows{
+
+        margin: auto;
+        padding: auto;
+        max-width: 915px;
+height: 350px;
+}
+
+.peoples{
+    margin: auto;
+    text-align: center;
+}
+.peoples .play-button{
+    height: 10px;
+    width: 10px;
+}
+.playbuttonns{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    margin: auto;
+
+}
+.peoples .card:hover{
+    color: #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.0); /* Gölgelendirme efekti: yatay, dikey, bulanıklık, rengin alfa değeri */
+
+
+}
+
+section.interval.second{
+    background-color: rgba(0, 0, 0, 0.1);
+    background-image: url(https://shreethemes.in/bootgen/layouts/images/mover/02.jpg);
+    background-attachment: fixed; /* Arka plan resmi sayfa kaydırıldığında sabit kalsın */
+    background-repeat: no-repeat; /* Arka plan resmini tekrar etme */
+    background-size: cover;
+    min-height: 250px;
+}
+
+.second .bg-overlay{
+    
+        background-color: rgba(0, 0, 0, 0.1);
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        position:absolute;
+        margin: auto;
+        
+}
+.intervalrow{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 200px;
+    height: auto;
+
+    
+}
+.centers{
+    margin: auto;
+    width: 815px;
+    padding-top: 6.5%;
+}
+.intervalrow h2{
+    font-size: 36px;
+}
+.intervalrow h6{
+    font-size: 18px;
+}
+
+.cards{
+    
+    position: relative;
+    width: 270px;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden; 
+    margin: auto;
+    padding: auto;
+    text-align: left;
+    float: left;
+    margin:10px;
+    border: solid 1px rgba(0, 0, 0, 0.133);
+}
+
+.cards img{
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.socialcardtext{
+    text-align: center;
+    margin: auto;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin: 10px;
+    
+
+}
+
+.socialcardtext h4{
+    font-weight: 400;
+}
+.socialtextmuted{
+    color:#8492a6;
+    text-align: center;
+    margin: auto;
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.795);
+    width: 280px;
+    height: 50px;
+}
+
+.cards:hover .social-icons {
+    opacity: 1;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 12px 5px;
+    padding-top: 5px;
+    text-align: center;
+}
+.fa-brands:hover{
+    filter:invert(100%);
+
+}
+.social-icon:hover{
+    background-color: #1750a3;
+}
+.rowss{
+
+    margin: auto;
+    padding: auto;
+    max-width: 1160px;
+    min-height: 450px;
+
+}
+
+.section.bggray.last h6{
+    font-size: 14px;
+    color: #e78f22;
+    
+}
+
+.cardtext h5:hover{
+    color: #f89d36;
+}
+
+.section.bggray.last{
+    height: 800px;
+}
+
+.contact{
+    position: relative;
+    display: flex;
+}
+.center{
+    margin: auto;
+    padding-left: 10%;
+}
+
+.form{
+    width: 42%;
+    height: auto;
+    border: solid 1px rgba(0, 0, 0, 0.241);
+    display: inline-block;
+    color:black;
+    padding: 15px;
+    
+}
+
+
+
+.yourname{
+    text-align: left;
+    float: left;
+    margin: 0px 0px 16px;
+    margin-right: 25px;
+    width: 47%;
+
+}
+label {
+    margin-bottom: 5px; /* Etiketlerin altındaki boşluğu ayarlar */
+    display: block; /* Etiketleri blok düzende gösterir */
+}
+
+.yourname label,
+.youremail label,
+.subject label,
+.yourmessage label {
+    margin-top: 10px; /* Her bir etiketin üstündeki boşluğu ayarlar */
+}
+.youremail{
+        text-align: left;
+        width: 48%;
+
+        float: left;
+        margin: 0px 0px 16px;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+input[type="text"] {
+   padding: 6px 12px;
+   width: 100%;
+   height: 40px;
+   border: solid 1px rgba(0, 0, 0, 0.212);
+   border-radius: 5px;
+}
+
+
+
+input:hover{
+    border-color: #f89d36;
+}
+
+
+ textarea{
+    width: 100%;
+ }
+
+ .subject{
+    text-align: left;
+    margin: auto;
+
+ }
+
+ .yourmessage{
+    text-align: left;
+
+ }
+
+
+
+.sendmessage button{
+    width: 100%;
+}
+
+
+
+
+ .map {
+    width: 40%;
+    height: 400px; /* Harita yüksekliği */
+    background-color: #f0f0f0; /* Harita arkaplan rengi */
+    margin-left: 4%; /* Form ile harita arasındaki boşluğu ayarlar */
+  
+  }
+  
+ 
+
+  .button.bg:hover{
+    background-color: #e78f22;
+  }
+
+  .bggray.brand{
+    padding-top: 50px;
+    height: 150px;
+  }
+
+  .centerss{
+    position: relative;
+   text-align: center;
+  }
+  .centerss img{
+            margin: 24px 17px;
+  }
+
+  .footer{
+    background-color: #2f3c4e;
+    width: 100%;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.111);
+    margin: auto;
+    overflow: hidden; /* Yatay taşmaları engellemek için */
+
+  }
+  .footercenter{
+    padding-top: 50px;
+    margin: auto;
+    padding-bottom: 50px;
+    width: 100%;
+    max-width: 1100px; /* Footer merkezini belirli bir genişlikte tutmak için */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+.text-foot {
+    padding-top: 10px;
+    width: 350px;
+    color: #adb5bd;
+}
+.rowq{
+    display: flex;
+    width: 100%;
+
+}
+
+footer h4 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: #fafafb ;
+    display: inline;
+}
+
+.links{
+    max-width: 250px;
+}
+
+.links ul li{
+    display: inline-flex;
+        
+}
+
+.footer-last{
+    background-color: #2f3c4e;
+    height: 70px;
+    padding: 15px;
+    clear: both; /* Footer'ı temizlemek için */
+
+}
+
+.footerlogo .fa-brands{
+    filter: invert(100);
+}
